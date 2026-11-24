@@ -1,0 +1,68 @@
+{
+  "total_records": 1723817,
+  "binary_distribution": {
+    "benign": 170865,
+    "attack": 1552952,
+    "benign_pct": 9.91,
+    "attack_pct": 90.09
+  },
+  "attack_category_distribution": {
+    "dos": 632507,
+    "ddos": 420282,
+    "web": 288304,
+    "probe": 183293,
+    "benign": 170865,
+    "bruteforce": 28566
+  },
+  "attack_type_distribution": {
+    "syn": 506451,
+    "http_flood": 254314,
+    "udp": 227408,
+    "tcp_ack": 199304,
+    "benign": 170865,
+    "portscan_tcp": 100000,
+    "slowloris": 94887,
+    "os_fingerprinting": 62957,
+    "dir_bruteforce": 28566,
+    "icmp": 24739,
+    "portscan_udp": 20336,
+    "ssh": 14902,
+    "ftp": 13664,
+    "xss": 3661,
+    "sql_injection": 1763
+  },
+  "detailed_breakdown": {
+    "benign": {
+      "benign": 170865
+    },
+    "bruteforce": {
+      "ftp": 13664,
+      "ssh": 14902
+    },
+    "ddos": {
+      "icmp": 11217,
+      "slowloris": 18649,
+      "syn": 174087,
+      "tcp_ack": 154084,
+      "udp": 62245
+    },
+    "dos": {
+      "icmp": 13522,
+      "slowloris": 76238,
+      "syn": 332364,
+      "tcp_ack": 45220,
+      "udp": 165163
+    },
+    "probe": {
+      "os_fingerprinting": 62957,
+      "portscan_tcp": 100000,
+      "portscan_udp": 20336
+    },
+    "web": {
+      "dir_bruteforce": 28566,
+      "http_flood": 254314,
+      "sql_injection": 1763,
+      "xss": 3661
+    }
+  }
+}
