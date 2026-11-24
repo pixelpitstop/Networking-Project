@@ -1,0 +1,32 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Data - per BRIEF.md: raw data and processed data must be gitignored
+data/
+rawdata/
+
+# Models
+models/*.joblib
+models/*.json
+
+# Benchmark and run outputs (except tracked schema templates)
+*.log
+
+# System & IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Docker / Kafka local volumes
+kafka-data/
