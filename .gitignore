@@ -12,6 +12,9 @@ build/
 dist/
 *.egg-info/
 
+# Brief
+[Bb]rief.[Mm][Dd]
+
 # Data - per BRIEF.md: raw data and processed data must be gitignored
 data/
 rawdata/
