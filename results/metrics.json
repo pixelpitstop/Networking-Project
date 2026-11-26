@@ -1,0 +1,304 @@
+{
+  "test_split_path": "data/processed/test.parquet",
+  "test_samples": 517156,
+  "test_benign": 51260,
+  "test_attack": 465896,
+  "tracks": {
+    "isolation_forest": {
+      "precision": 0.7441,
+      "recall": 0.0209,
+      "f1": 0.0406,
+      "pr_auc": 0.9101,
+      "roc_auc": 0.6099,
+      "fpr": 0.0652,
+      "confusion_matrix": {
+        "tn": 47917,
+        "fp": 3343,
+        "fn": 456177,
+        "tp": 9719
+      },
+      "predicted_anomalies": 13062,
+      "actual_anomalies": 465896,
+      "total_samples": 517156,
+      "scoring_time_sec": 1.8,
+      "per_attack_category": {
+        "benign": {
+          "count": 51260,
+          "recall_or_specificity": 0.9348,
+          "fpr": 0.0652,
+          "detected": 47917
+        },
+        "bruteforce": {
+          "count": 8571,
+          "recall": 0.0124,
+          "detected": 106,
+          "missed": 8465
+        },
+        "ddos": {
+          "count": 126088,
+          "recall": 0.0009,
+          "detected": 116,
+          "missed": 125972
+        },
+        "dos": {
+          "count": 189755,
+          "recall": 0.0498,
+          "detected": 9456,
+          "missed": 180299
+        },
+        "probe": {
+          "count": 54989,
+          "recall": 0.0002,
+          "detected": 12,
+          "missed": 54977
+        },
+        "web": {
+          "count": 86493,
+          "recall": 0.0003,
+          "detected": 29,
+          "missed": 86464
+        }
+      },
+      "per_attack_type": {
+        "benign": {
+          "count": 51260,
+          "recall_or_specificity": 0.9348,
+          "fpr": 0.0652,
+          "detected": 47917
+        },
+        "dir_bruteforce": {
+          "count": 8570,
+          "recall": 0.0,
+          "detected": 0,
+          "missed": 8570
+        },
+        "ftp": {
+          "count": 4100,
+          "recall": 0.0027,
+          "detected": 11,
+          "missed": 4089
+        },
+        "http_flood": {
+          "count": 76295,
+          "recall": 0.0,
+          "detected": 0,
+          "missed": 76295
+        },
+        "icmp": {
+          "count": 7423,
+          "recall": 0.0027,
+          "detected": 20,
+          "missed": 7403
+        },
+        "os_fingerprinting": {
+          "count": 18888,
+          "recall": 0.0006,
+          "detected": 12,
+          "missed": 18876
+        },
+        "portscan_tcp": {
+          "count": 30000,
+          "recall": 0.0,
+          "detected": 0,
+          "missed": 30000
+        },
+        "portscan_udp": {
+          "count": 6101,
+          "recall": 0.0,
+          "detected": 0,
+          "missed": 6101
+        },
+        "slowloris": {
+          "count": 28467,
+          "recall": 0.0021,
+          "detected": 61,
+          "missed": 28406
+        },
+        "sql_injection": {
+          "count": 529,
+          "recall": 0.017,
+          "detected": 9,
+          "missed": 520
+        },
+        "ssh": {
+          "count": 4471,
+          "recall": 0.0212,
+          "detected": 95,
+          "missed": 4376
+        },
+        "syn": {
+          "count": 151937,
+          "recall": 0.0002,
+          "detected": 27,
+          "missed": 151910
+        },
+        "tcp_ack": {
+          "count": 59793,
+          "recall": 0.0002,
+          "detected": 11,
+          "missed": 59782
+        },
+        "udp": {
+          "count": 68223,
+          "recall": 0.1386,
+          "detected": 9453,
+          "missed": 58770
+        },
+        "xss": {
+          "count": 1099,
+          "recall": 0.0182,
+          "detected": 20,
+          "missed": 1079
+        }
+      }
+    },
+    "xgboost_baseline": {
+      "precision": 0.998,
+      "recall": 0.955,
+      "f1": 0.976,
+      "pr_auc": 0.9991,
+      "roc_auc": 0.9923,
+      "fpr": 0.017,
+      "confusion_matrix": {
+        "tn": 50388,
+        "fp": 872,
+        "fn": 20979,
+        "tp": 444917
+      },
+      "predicted_anomalies": 445789,
+      "actual_anomalies": 465896,
+      "total_samples": 517156,
+      "scoring_time_sec": 0.15,
+      "per_attack_category": {
+        "benign": {
+          "count": 51260,
+          "recall_or_specificity": 0.983,
+          "fpr": 0.017,
+          "detected": 50388
+        },
+        "bruteforce": {
+          "count": 8571,
+          "recall": 0.5291,
+          "detected": 4535,
+          "missed": 4036
+        },
+        "ddos": {
+          "count": 126088,
+          "recall": 0.9496,
+          "detected": 119729,
+          "missed": 6359
+        },
+        "dos": {
+          "count": 189755,
+          "recall": 0.9595,
+          "detected": 182073,
+          "missed": 7682
+        },
+        "probe": {
+          "count": 54989,
+          "recall": 0.9721,
+          "detected": 53455,
+          "missed": 1534
+        },
+        "web": {
+          "count": 86493,
+          "recall": 0.9842,
+          "detected": 85125,
+          "missed": 1368
+        }
+      },
+      "per_attack_type": {
+        "benign": {
+          "count": 51260,
+          "recall_or_specificity": 0.983,
+          "fpr": 0.017,
+          "detected": 50388
+        },
+        "dir_bruteforce": {
+          "count": 8570,
+          "recall": 0.9992,
+          "detected": 8563,
+          "missed": 7
+        },
+        "ftp": {
+          "count": 4100,
+          "recall": 0.622,
+          "detected": 2550,
+          "missed": 1550
+        },
+        "http_flood": {
+          "count": 76295,
+          "recall": 0.9999,
+          "detected": 76291,
+          "missed": 4
+        },
+        "icmp": {
+          "count": 7423,
+          "recall": 0.6924,
+          "detected": 5140,
+          "missed": 2283
+        },
+        "os_fingerprinting": {
+          "count": 18888,
+          "recall": 0.9221,
+          "detected": 17417,
+          "missed": 1471
+        },
+        "portscan_tcp": {
+          "count": 30000,
+          "recall": 0.9983,
+          "detected": 29949,
+          "missed": 51
+        },
+        "portscan_udp": {
+          "count": 6101,
+          "recall": 0.998,
+          "detected": 6089,
+          "missed": 12
+        },
+        "slowloris": {
+          "count": 28467,
+          "recall": 0.8799,
+          "detected": 25047,
+          "missed": 3420
+        },
+        "sql_injection": {
+          "count": 529,
+          "recall": 0.1474,
+          "detected": 78,
+          "missed": 451
+        },
+        "ssh": {
+          "count": 4471,
+          "recall": 0.444,
+          "detected": 1985,
+          "missed": 2486
+        },
+        "syn": {
+          "count": 151937,
+          "recall": 0.9913,
+          "detected": 150611,
+          "missed": 1326
+        },
+        "tcp_ack": {
+          "count": 59793,
+          "recall": 0.9657,
+          "detected": 57743,
+          "missed": 2050
+        },
+        "udp": {
+          "count": 68223,
+          "recall": 0.9273,
+          "detected": 63261,
+          "missed": 4962
+        },
+        "xss": {
+          "count": 1099,
+          "recall": 0.1756,
+          "detected": 193,
+          "missed": 906
+        }
+      }
+    }
+  }
+}
