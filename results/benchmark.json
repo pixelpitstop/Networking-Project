@@ -1,0 +1,143 @@
+{
+  "benchmark_timestamp": 1795785703.778972,
+  "run_id": "ee0360ce",
+  "model": "xgboost_baseline",
+  "batch_size": 64,
+  "duration_per_rate_sec": 8.0,
+  "machine_specs": {
+    "os": "macOS-27.2.1-arm64-arm-64bit",
+    "arch": "arm64",
+    "cpu_model": "Apple M5",
+    "cpu_cores_logical": 10,
+    "ram_gb": 16.0,
+    "python_version": "3.11.16",
+    "kafka_broker": "single-broker apache/kafka:3.7.0 (KRaft) via Docker Compose"
+  },
+  "results": [
+    {
+      "target_rate_msgs_per_sec": 100,
+      "planned_messages": 800,
+      "produced_messages": 800,
+      "producer_achieved_rate": 99.92,
+      "producer_elapsed_sec": 8.006,
+      "consumed_messages": 800,
+      "consumer_achieved_throughput": 101.86,
+      "consumer_elapsed_sec": 7.854,
+      "alerts_emitted": 680,
+      "latency_ms": {
+        "p50": 124.4,
+        "p95": 216.76,
+        "p99": 229.26
+      },
+      "consumer_lag_at_end": 0,
+      "online_quality": {
+        "tp": 678,
+        "fp": 2,
+        "fn": 36,
+        "tn": 84,
+        "precision": 0.9971,
+        "recall": 0.9496
+      }
+    },
+    {
+      "target_rate_msgs_per_sec": 500,
+      "planned_messages": 4000,
+      "produced_messages": 4000,
+      "producer_achieved_rate": 499.71,
+      "producer_elapsed_sec": 8.005,
+      "consumed_messages": 4000,
+      "consumer_achieved_throughput": 502.83,
+      "consumer_elapsed_sec": 7.955,
+      "alerts_emitted": 3457,
+      "latency_ms": {
+        "p50": 78.48,
+        "p95": 135.7,
+        "p99": 149.55
+      },
+      "consumer_lag_at_end": 0,
+      "online_quality": {
+        "tp": 3450,
+        "fp": 7,
+        "fn": 143,
+        "tn": 400,
+        "precision": 0.998,
+        "recall": 0.9602
+      }
+    },
+    {
+      "target_rate_msgs_per_sec": 1000,
+      "planned_messages": 8000,
+      "produced_messages": 8000,
+      "producer_achieved_rate": 999.88,
+      "producer_elapsed_sec": 8.001,
+      "consumed_messages": 8000,
+      "consumer_achieved_throughput": 1007.21,
+      "consumer_elapsed_sec": 7.943,
+      "alerts_emitted": 6938,
+      "latency_ms": {
+        "p50": 56.84,
+        "p95": 578.7,
+        "p99": 786.23
+      },
+      "consumer_lag_at_end": 0,
+      "online_quality": {
+        "tp": 6922,
+        "fp": 16,
+        "fn": 302,
+        "tn": 760,
+        "precision": 0.9977,
+        "recall": 0.9582
+      }
+    },
+    {
+      "target_rate_msgs_per_sec": 2000,
+      "planned_messages": 16000,
+      "produced_messages": 16000,
+      "producer_achieved_rate": 1999.93,
+      "producer_elapsed_sec": 8.0,
+      "consumed_messages": 16000,
+      "consumer_achieved_throughput": 2004.58,
+      "consumer_elapsed_sec": 7.982,
+      "alerts_emitted": 13803,
+      "latency_ms": {
+        "p50": 26.41,
+        "p95": 41.25,
+        "p99": 57.3
+      },
+      "consumer_lag_at_end": 0,
+      "online_quality": {
+        "tp": 13767,
+        "fp": 36,
+        "fn": 601,
+        "tn": 1596,
+        "precision": 0.9974,
+        "recall": 0.9582
+      }
+    },
+    {
+      "target_rate_msgs_per_sec": 5000,
+      "planned_messages": 40000,
+      "produced_messages": 40000,
+      "producer_achieved_rate": 4999.4,
+      "producer_elapsed_sec": 8.001,
+      "consumed_messages": 40000,
+      "consumer_achieved_throughput": 5000.2,
+      "consumer_elapsed_sec": 8.0,
+      "alerts_emitted": 34468,
+      "latency_ms": {
+        "p50": 16.25,
+        "p95": 25.63,
+        "p99": 66.3
+      },
+      "consumer_lag_at_end": 0,
+      "online_quality": {
+        "tp": 34388,
+        "fp": 80,
+        "fn": 1570,
+        "tn": 3962,
+        "precision": 0.9977,
+        "recall": 0.9563
+      }
+    }
+  ]
+}
